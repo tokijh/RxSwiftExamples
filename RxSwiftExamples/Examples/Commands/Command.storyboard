@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Combine Latest View Controller-->
+        <scene sceneID="KwP-Nr-ABJ">
+            <objects>
+                <viewController storyboardIdentifier="CombineLatest" id="csO-b7-bCe" customClass="CombineLatestViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JP6-5c-AJB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPJ-hb-9Ae">
+                                <rect key="frame" x="16" y="36" width="37" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GGN-vZ-0rQ">
+                                <rect key="frame" x="16" y="77.5" width="343" height="573.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9UG-V0-AtS" firstAttribute="bottom" secondItem="GGN-vZ-0rQ" secondAttribute="bottom" constant="16" id="Mfn-3j-vMF"/>
+                            <constraint firstItem="GGN-vZ-0rQ" firstAttribute="top" secondItem="wPJ-hb-9Ae" secondAttribute="bottom" constant="16" id="PIh-cX-VCY"/>
+                            <constraint firstItem="wPJ-hb-9Ae" firstAttribute="leading" secondItem="9UG-V0-AtS" secondAttribute="leading" constant="16" id="Qcl-ed-DBu"/>
+                            <constraint firstItem="9UG-V0-AtS" firstAttribute="trailing" secondItem="GGN-vZ-0rQ" secondAttribute="trailing" constant="16" id="W3p-CL-nn3"/>
+                            <constraint firstItem="wPJ-hb-9Ae" firstAttribute="top" secondItem="9UG-V0-AtS" secondAttribute="top" constant="16" id="wNX-7M-5hz"/>
+                            <constraint firstItem="GGN-vZ-0rQ" firstAttribute="leading" secondItem="9UG-V0-AtS" secondAttribute="leading" constant="16" id="yIJ-kP-Snb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9UG-V0-AtS"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="GGN-vZ-0rQ" id="jCs-HS-Sr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPa-KJ-lTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
