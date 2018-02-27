@@ -22,6 +22,11 @@
 		5CD3646520450096003216C4 /* Command.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3646420450096003216C4 /* Command.storyboard */; };
 		5CD3646820450219003216C4 /* BorderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3646720450219003216C4 /* BorderExtensions.swift */; };
 		5CD3646A204506A0003216C4 /* ExampleStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD36469204506A0003216C4 /* ExampleStoryboard.swift */; };
+		5CD3647320451E37003216C4 /* WithLatestFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */; };
+		5CD3647520454AB4003216C4 /* MergeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647420454AB4003216C4 /* MergeViewController.swift */; };
+		5CD3647720455001003216C4 /* SwitchLatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647620455001003216C4 /* SwitchLatestViewController.swift */; };
+		5CD3647920455356003216C4 /* ZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647820455356003216C4 /* ZipViewController.swift */; };
+		5CD3647B20455923003216C4 /* ConcatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647A20455923003216C4 /* ConcatViewController.swift */; };
 		EBAD8FC1C37D06832FC9163D /* Pods_RxSwiftExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625C2AA558B87CCB45BED074 /* Pods_RxSwiftExamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		5CD3646420450096003216C4 /* Command.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Command.storyboard; sourceTree = "<group>"; };
 		5CD3646720450219003216C4 /* BorderExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderExtensions.swift; sourceTree = "<group>"; };
 		5CD36469204506A0003216C4 /* ExampleStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStoryboard.swift; sourceTree = "<group>"; };
+		5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFromViewController.swift; sourceTree = "<group>"; };
+		5CD3647420454AB4003216C4 /* MergeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeViewController.swift; sourceTree = "<group>"; };
+		5CD3647620455001003216C4 /* SwitchLatestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLatestViewController.swift; sourceTree = "<group>"; };
+		5CD3647820455356003216C4 /* ZipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipViewController.swift; sourceTree = "<group>"; };
+		5CD3647A20455923003216C4 /* ConcatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatViewController.swift; sourceTree = "<group>"; };
 		625C2AA558B87CCB45BED074 /* Pods_RxSwiftExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AEB94E2DBD6B7A5031F671 /* Pods-RxSwiftExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		79CB0D4EC5D3DF5CE419A538 /* Pods-RxSwiftExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +188,11 @@
 			children = (
 				5CD3646420450096003216C4 /* Command.storyboard */,
 				5CD364432044F260003216C4 /* CombineLatestViewController.swift */,
+				5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */,
+				5CD3647420454AB4003216C4 /* MergeViewController.swift */,
+				5CD3647620455001003216C4 /* SwitchLatestViewController.swift */,
+				5CD3647820455356003216C4 /* ZipViewController.swift */,
+				5CD3647A20455923003216C4 /* ConcatViewController.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -353,13 +368,18 @@
 			files = (
 				5CD3645C2044F5D5003216C4 /* ExampleListSectionData.swift in Sources */,
 				5CD364582044F3DD003216C4 /* Example.swift in Sources */,
+				5CD3647320451E37003216C4 /* WithLatestFromViewController.swift in Sources */,
 				5CD3645E2044F70B003216C4 /* Command.swift in Sources */,
+				5CD3647920455356003216C4 /* ZipViewController.swift in Sources */,
+				5CD3647B20455923003216C4 /* ConcatViewController.swift in Sources */,
 				5CD364622044F9CE003216C4 /* CommandTableCellViewModel.swift in Sources */,
 				5CD3646A204506A0003216C4 /* ExampleStoryboard.swift in Sources */,
 				5CD364302044F110003216C4 /* AppDelegate.swift in Sources */,
 				5CD364452044F260003216C4 /* CombineLatestViewController.swift in Sources */,
 				5CD3645A2044F592003216C4 /* ExamplesListViewModel.swift in Sources */,
+				5CD3647520454AB4003216C4 /* MergeViewController.swift in Sources */,
 				5CD3644C2044F2FF003216C4 /* ExamplesListViewController.swift in Sources */,
+				5CD3647720455001003216C4 /* SwitchLatestViewController.swift in Sources */,
 				5CD364602044F914003216C4 /* CommandTableCell.swift in Sources */,
 				5CD364492044F2A9003216C4 /* BaseViewController.swift in Sources */,
 				5CD3646820450219003216C4 /* BorderExtensions.swift in Sources */,

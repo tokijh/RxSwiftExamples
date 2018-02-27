@@ -1,5 +1,5 @@
 //
-//  CombineLatestViewController.swift
+//  SwitchLatestViewController.swift
 //  RxSwiftExamples
 //
 //  Created by tokijh on 2018. 2. 27..
@@ -10,8 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class CombineLatestViewController: BaseViewController {
-
+class SwitchLatestViewController: BaseViewController {
     @IBOutlet weak var logTextView: UITextView!
     
     let log = Variable<String>("")
@@ -29,12 +28,23 @@ class CombineLatestViewController: BaseViewController {
     }
     
     func function() {
-        print("start combineLatest function")
-        let boys = Observable.from(["boy1", "boy2", "boy3", "boy4"])
-        let girls = Observable.from(["gir1", "gir2", "gir3", "gir4", "gir5", "gir6"])
-        Observable.combineLatest(boys, girls) { return ($0, $1) }.subscribe { [weak self] in
+        print("start switchLatest function")
+        let aSubject = PublishSubject<String>()
+        let bSubject = PublishSubject<String>()
+        let switchTest = BehaviorSubject<Observable<String>>(value: aSubject)
+
+        switchTest.switchLatest().subscribe { [weak self] in
             self?.print($0)
         }.disposed(by: disposeBag)
+        
+        aSubject.on(.next("AA-1"))
+        bSubject.on(.next("BB-1"))
+        switchTest.on(.next(bSubject))
+        aSubject.on(.next("AA-2"))
+        bSubject.on(.next("BB-2"))
+        aSubject.on(.next("AA-3"))
+        bSubject.on(.next("BB-3"))
+        bSubject.on(.next("BB-4"))
     }
     
     func print(_ items: Any...) {

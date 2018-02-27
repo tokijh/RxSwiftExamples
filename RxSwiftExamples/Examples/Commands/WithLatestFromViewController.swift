@@ -1,5 +1,5 @@
 //
-//  CombineLatestViewController.swift
+//  WithLatestFromViewController.swift
 //  RxSwiftExamples
 //
 //  Created by tokijh on 2018. 2. 27..
@@ -10,8 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class CombineLatestViewController: BaseViewController {
-
+class WithLatestFromViewContoller: BaseViewController {
     @IBOutlet weak var logTextView: UITextView!
     
     let log = Variable<String>("")
@@ -20,6 +19,7 @@ class CombineLatestViewController: BaseViewController {
         super.viewDidLoad()
         bind()
         function()
+        function2()
     }
     
     func bind() {
@@ -29,10 +29,23 @@ class CombineLatestViewController: BaseViewController {
     }
     
     func function() {
-        print("start combineLatest function")
-        let boys = Observable.from(["boy1", "boy2", "boy3", "boy4"])
-        let girls = Observable.from(["gir1", "gir2", "gir3", "gir4", "gir5", "gir6"])
-        Observable.combineLatest(boys, girls) { return ($0, $1) }.subscribe { [weak self] in
+        print("start withLatestFrom function")
+        let person = Observable.from(["boy1", "boy2", "boy3", "boy4"])
+        let price = Observable.from([1000, 2000, 3000, 4000, 5000])
+        person.withLatestFrom(price) {
+            return ($0, $1)
+        }.subscribe { [weak self] in
+            self?.print($0)
+        }.disposed(by: disposeBag)
+    }
+    
+    func function2() {
+        print("start withLatestFrom function2")
+        let person = Observable.from(["boy1", "boy2", "boy3", "boy4"])
+        let price = Observable.from([1000, 2000])
+        person.withLatestFrom(price) {
+            return ($0, $1)
+        }.subscribe { [weak self] in
             self?.print($0)
         }.disposed(by: disposeBag)
     }

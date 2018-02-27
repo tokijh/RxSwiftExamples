@@ -1,5 +1,5 @@
 //
-//  CombineLatestViewController.swift
+//  ConcatViewController.swift
 //  RxSwiftExamples
 //
 //  Created by tokijh on 2018. 2. 27..
@@ -10,8 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class CombineLatestViewController: BaseViewController {
-
+class ConcatViewController: BaseViewController {
     @IBOutlet weak var logTextView: UITextView!
     
     let log = Variable<String>("")
@@ -29,10 +28,11 @@ class CombineLatestViewController: BaseViewController {
     }
     
     func function() {
-        print("start combineLatest function")
-        let boys = Observable.from(["boy1", "boy2", "boy3", "boy4"])
-        let girls = Observable.from(["gir1", "gir2", "gir3", "gir4", "gir5", "gir6"])
-        Observable.combineLatest(boys, girls) { return ($0, $1) }.subscribe { [weak self] in
+        print("start concat function")
+        let a = Observable.from(["A", "B", "C", "D", "E"])
+        let b = Observable.from(["1", "2", "3"])
+        
+        a.concat(b).subscribe { [weak self] in
             self?.print($0)
         }.disposed(by: disposeBag)
     }

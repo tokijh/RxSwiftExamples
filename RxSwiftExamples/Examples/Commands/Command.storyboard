@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combine Latest View Controller-->
+        <!--CombineLatest-->
         <scene sceneID="KwP-Nr-ABJ">
             <objects>
-                <viewController storyboardIdentifier="CombineLatest" id="csO-b7-bCe" customClass="CombineLatestViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CombineLatest" title="CombineLatest" id="csO-b7-bCe" customClass="CombineLatestViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JP6-5c-AJB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,6 +60,261 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPa-KJ-lTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-236" y="118.29085457271366"/>
+        </scene>
+        <!--WithLatestFrom-->
+        <scene sceneID="7yz-mu-aZc">
+            <objects>
+                <viewController storyboardIdentifier="WithLatestFrom" title="WithLatestFrom" id="zHI-T0-DZo" customClass="WithLatestFromViewContoller" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PUt-4M-dUe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYj-Wz-J6s">
+                                <rect key="frame" x="16" y="36" width="37" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nDa-ft-Kxe">
+                                <rect key="frame" x="16" y="77.5" width="343" height="573.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nDa-ft-Kxe" firstAttribute="top" secondItem="zYj-Wz-J6s" secondAttribute="bottom" constant="16" id="Gra-Cj-cKx"/>
+                            <constraint firstItem="nDa-ft-Kxe" firstAttribute="leading" secondItem="Mev-g7-gr3" secondAttribute="leading" constant="16" id="JN4-Ef-Ius"/>
+                            <constraint firstItem="Mev-g7-gr3" firstAttribute="bottom" secondItem="nDa-ft-Kxe" secondAttribute="bottom" constant="16" id="NfR-3e-OFE"/>
+                            <constraint firstItem="zYj-Wz-J6s" firstAttribute="leading" secondItem="Mev-g7-gr3" secondAttribute="leading" constant="16" id="fHW-Ca-PFE"/>
+                            <constraint firstItem="zYj-Wz-J6s" firstAttribute="top" secondItem="Mev-g7-gr3" secondAttribute="top" constant="16" id="goX-QL-hXu"/>
+                            <constraint firstItem="Mev-g7-gr3" firstAttribute="trailing" secondItem="nDa-ft-Kxe" secondAttribute="trailing" constant="16" id="iN4-yY-SRX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mev-g7-gr3"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="nDa-ft-Kxe" id="0Bw-f4-PKt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZH8-gb-XHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="118"/>
+        </scene>
+        <!--Merge-->
+        <scene sceneID="51k-hW-31I">
+            <objects>
+                <viewController storyboardIdentifier="Merge" title="Merge" id="EMS-Iy-fN9" customClass="MergeViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vbU-CR-XnB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOp-z8-3DL">
+                                <rect key="frame" x="16" y="36" width="37" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5us-Z4-VkW">
+                                <rect key="frame" x="16" y="77.5" width="343" height="573.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NOp-z8-3DL" firstAttribute="top" secondItem="DLm-TQ-J3j" secondAttribute="top" constant="16" id="0g7-NW-9Vz"/>
+                            <constraint firstItem="DLm-TQ-J3j" firstAttribute="trailing" secondItem="5us-Z4-VkW" secondAttribute="trailing" constant="16" id="5Ty-8Z-XuU"/>
+                            <constraint firstItem="DLm-TQ-J3j" firstAttribute="bottom" secondItem="5us-Z4-VkW" secondAttribute="bottom" constant="16" id="AkL-cO-C5J"/>
+                            <constraint firstItem="NOp-z8-3DL" firstAttribute="leading" secondItem="DLm-TQ-J3j" secondAttribute="leading" constant="16" id="Qdc-nm-jpW"/>
+                            <constraint firstItem="5us-Z4-VkW" firstAttribute="top" secondItem="NOp-z8-3DL" secondAttribute="bottom" constant="16" id="TR9-Nc-Gl2"/>
+                            <constraint firstItem="5us-Z4-VkW" firstAttribute="leading" secondItem="DLm-TQ-J3j" secondAttribute="leading" constant="16" id="llx-lv-Dfj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DLm-TQ-J3j"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="5us-Z4-VkW" id="e4h-J1-qqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrn-op-5Uz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="117"/>
+        </scene>
+        <!--SwitchLatest-->
+        <scene sceneID="L4V-Qf-Uxt">
+            <objects>
+                <viewController storyboardIdentifier="SwitchLatest" title="SwitchLatest" id="kke-yj-Zfv" customClass="SwitchLatestViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O8N-Rb-yH1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ya-bL-zgk">
+                                <rect key="frame" x="16" y="36" width="37" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-lk-W0M">
+                                <rect key="frame" x="16" y="77.5" width="343" height="573.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Op0-9w-cjG" firstAttribute="bottom" secondItem="wp6-lk-W0M" secondAttribute="bottom" constant="16" id="QYR-Mr-f2b"/>
+                            <constraint firstItem="wp6-lk-W0M" firstAttribute="leading" secondItem="Op0-9w-cjG" secondAttribute="leading" constant="16" id="Wxe-iZ-zdp"/>
+                            <constraint firstItem="3ya-bL-zgk" firstAttribute="top" secondItem="Op0-9w-cjG" secondAttribute="top" constant="16" id="afI-p3-Gvl"/>
+                            <constraint firstItem="3ya-bL-zgk" firstAttribute="leading" secondItem="Op0-9w-cjG" secondAttribute="leading" constant="16" id="fsh-cY-NAl"/>
+                            <constraint firstItem="wp6-lk-W0M" firstAttribute="top" secondItem="3ya-bL-zgk" secondAttribute="bottom" constant="16" id="rDx-jj-snX"/>
+                            <constraint firstItem="Op0-9w-cjG" firstAttribute="trailing" secondItem="wp6-lk-W0M" secondAttribute="trailing" constant="16" id="tsn-D2-ha9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Op0-9w-cjG"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="wp6-lk-W0M" id="ZY6-LY-PQ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6f-ec-wce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="118"/>
+        </scene>
+        <!--Zip-->
+        <scene sceneID="9ex-wF-IYo">
+            <objects>
+                <viewController storyboardIdentifier="Zip" title="Zip" id="QPR-kZ-rCp" customClass="ZipViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ps-eA-1JN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gE-61-ANi">
+                                <rect key="frame" x="16" y="36" width="37" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="l4C-KF-Jr5">
+                                <rect key="frame" x="16" y="77.5" width="343" height="573.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1gE-61-ANi" firstAttribute="top" secondItem="cHR-dC-vuM" secondAttribute="top" constant="16" id="Nvm-8s-aNw"/>
+                            <constraint firstItem="cHR-dC-vuM" firstAttribute="trailing" secondItem="l4C-KF-Jr5" secondAttribute="trailing" constant="16" id="Sji-1V-uqh"/>
+                            <constraint firstItem="cHR-dC-vuM" firstAttribute="bottom" secondItem="l4C-KF-Jr5" secondAttribute="bottom" constant="16" id="bm2-4U-evI"/>
+                            <constraint firstItem="l4C-KF-Jr5" firstAttribute="top" secondItem="1gE-61-ANi" secondAttribute="bottom" constant="16" id="c28-L7-i8x"/>
+                            <constraint firstItem="1gE-61-ANi" firstAttribute="leading" secondItem="cHR-dC-vuM" secondAttribute="leading" constant="16" id="p6Z-HP-wD4"/>
+                            <constraint firstItem="l4C-KF-Jr5" firstAttribute="leading" secondItem="cHR-dC-vuM" secondAttribute="leading" constant="16" id="pMI-b6-FiN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cHR-dC-vuM"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="l4C-KF-Jr5" id="Ppi-oe-Fae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEk-y8-5cs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2570" y="118"/>
+        </scene>
+        <!--Zip-->
+        <scene sceneID="HhD-cw-7vw">
+            <objects>
+                <viewController storyboardIdentifier="Concat" title="Zip" id="jaM-ok-DSh" customClass="ConcatViewController" customModule="RxSwiftExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CyI-0s-2gd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK9-T3-KP1">
+                                <rect key="frame" x="16" y="36" width="37" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZkS-ur-Hhr">
+                                <rect key="frame" x="16" y="77.5" width="343" height="573.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZkS-ur-Hhr" firstAttribute="top" secondItem="FK9-T3-KP1" secondAttribute="bottom" constant="16" id="5Ao-x6-WBl"/>
+                            <constraint firstItem="zDM-kB-feo" firstAttribute="trailing" secondItem="ZkS-ur-Hhr" secondAttribute="trailing" constant="16" id="LSW-cM-LiT"/>
+                            <constraint firstItem="zDM-kB-feo" firstAttribute="bottom" secondItem="ZkS-ur-Hhr" secondAttribute="bottom" constant="16" id="O7w-xs-vDF"/>
+                            <constraint firstItem="ZkS-ur-Hhr" firstAttribute="leading" secondItem="zDM-kB-feo" secondAttribute="leading" constant="16" id="b7G-nI-FcH"/>
+                            <constraint firstItem="FK9-T3-KP1" firstAttribute="top" secondItem="zDM-kB-feo" secondAttribute="top" constant="16" id="qm2-be-7JQ"/>
+                            <constraint firstItem="FK9-T3-KP1" firstAttribute="leading" secondItem="zDM-kB-feo" secondAttribute="leading" constant="16" id="yXk-sH-T1X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zDM-kB-feo"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="ZkS-ur-Hhr" id="S9Q-WP-bo3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RxX-sA-IAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3279" y="118"/>
         </scene>
     </scenes>
 </document>
