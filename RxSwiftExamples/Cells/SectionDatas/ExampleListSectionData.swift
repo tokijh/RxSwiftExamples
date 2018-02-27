@@ -9,7 +9,7 @@
 import RxDataSources
 
 enum ExampleListSectionData {
-    case command(command: [Value])
+    case combination(operators: [Value])
 }
 
 extension ExampleListSectionData: SectionModelType {
@@ -18,17 +18,17 @@ extension ExampleListSectionData: SectionModelType {
     
     var items: [Value] {
         switch self {
-        case .command(let commands): return commands
+        case .combination(let operators): return operators
         }
     }
     
     enum Value {
-        case command(command: Command)
+        case combination(operator: CombinationOperator)
     }
     
     init(original: ExampleListSectionData, items: [Value]) {
         switch original {
-        case .command(_): self = .command(command: items)
+        case .combination(_): self = .combination(operators: items)
         }
     }
 }

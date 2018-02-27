@@ -10,7 +10,7 @@ import RxSwift
 
 class ExamplesListViewModel {
     
-    let commands = Variable<[Command]>([])
+    let combinationOperators = Variable<[CombinationOperator]>([])
     
     let disposeBag = DisposeBag()
     
@@ -19,12 +19,12 @@ class ExamplesListViewModel {
     }
     
     func load() {
-        Command.load(self.commands)
+        CombinationOperator.load(self.combinationOperators)
     }
     
     lazy var sections: Observable<[ExampleListSectionData]> = {
         return Observable<ExampleListSectionData>.combineLatest([
-            self.commands.asObservable().map { ExampleListSectionData.command(command: $0.map { ExampleListSectionData.Value.command(command: $0) } ) }
+            self.combinationOperators.asObservable().map { ExampleListSectionData.combination(operators: $0.map { ExampleListSectionData.Value.combination(operator: $0) } ) }
         ])
     }()
 }

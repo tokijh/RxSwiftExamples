@@ -16,10 +16,10 @@
 		5CD364582044F3DD003216C4 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD364572044F3DD003216C4 /* Example.swift */; };
 		5CD3645A2044F592003216C4 /* ExamplesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD364592044F592003216C4 /* ExamplesListViewModel.swift */; };
 		5CD3645C2044F5D5003216C4 /* ExampleListSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3645B2044F5D5003216C4 /* ExampleListSectionData.swift */; };
-		5CD3645E2044F70B003216C4 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3645D2044F70B003216C4 /* Command.swift */; };
-		5CD364602044F914003216C4 /* CommandTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3645F2044F914003216C4 /* CommandTableCell.swift */; };
-		5CD364622044F9CE003216C4 /* CommandTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD364612044F9CE003216C4 /* CommandTableCellViewModel.swift */; };
-		5CD3646520450096003216C4 /* Command.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3646420450096003216C4 /* Command.storyboard */; };
+		5CD3645E2044F70B003216C4 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3645D2044F70B003216C4 /* Operator.swift */; };
+		5CD364602044F914003216C4 /* OperationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3645F2044F914003216C4 /* OperationTableCell.swift */; };
+		5CD364622044F9CE003216C4 /* OperationTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD364612044F9CE003216C4 /* OperationTableCellViewModel.swift */; };
+		5CD3646520450096003216C4 /* Operator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3646420450096003216C4 /* Operator.storyboard */; };
 		5CD3646820450219003216C4 /* BorderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3646720450219003216C4 /* BorderExtensions.swift */; };
 		5CD3646A204506A0003216C4 /* ExampleStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD36469204506A0003216C4 /* ExampleStoryboard.swift */; };
 		5CD3647320451E37003216C4 /* WithLatestFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */; };
@@ -27,6 +27,7 @@
 		5CD3647720455001003216C4 /* SwitchLatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647620455001003216C4 /* SwitchLatestViewController.swift */; };
 		5CD3647920455356003216C4 /* ZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647820455356003216C4 /* ZipViewController.swift */; };
 		5CD3647B20455923003216C4 /* ConcatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647A20455923003216C4 /* ConcatViewController.swift */; };
+		5CD3647D20455C55003216C4 /* CombinationOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647C20455C55003216C4 /* CombinationOperator.swift */; };
 		EBAD8FC1C37D06832FC9163D /* Pods_RxSwiftExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625C2AA558B87CCB45BED074 /* Pods_RxSwiftExamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +43,10 @@
 		5CD364572044F3DD003216C4 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		5CD364592044F592003216C4 /* ExamplesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesListViewModel.swift; sourceTree = "<group>"; };
 		5CD3645B2044F5D5003216C4 /* ExampleListSectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListSectionData.swift; sourceTree = "<group>"; };
-		5CD3645D2044F70B003216C4 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		5CD3645F2044F914003216C4 /* CommandTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTableCell.swift; sourceTree = "<group>"; };
-		5CD364612044F9CE003216C4 /* CommandTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTableCellViewModel.swift; sourceTree = "<group>"; };
-		5CD3646420450096003216C4 /* Command.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Command.storyboard; sourceTree = "<group>"; };
+		5CD3645D2044F70B003216C4 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		5CD3645F2044F914003216C4 /* OperationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationTableCell.swift; sourceTree = "<group>"; };
+		5CD364612044F9CE003216C4 /* OperationTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationTableCellViewModel.swift; sourceTree = "<group>"; };
+		5CD3646420450096003216C4 /* Operator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Operator.storyboard; sourceTree = "<group>"; };
 		5CD3646720450219003216C4 /* BorderExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderExtensions.swift; sourceTree = "<group>"; };
 		5CD36469204506A0003216C4 /* ExampleStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStoryboard.swift; sourceTree = "<group>"; };
 		5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFromViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		5CD3647620455001003216C4 /* SwitchLatestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLatestViewController.swift; sourceTree = "<group>"; };
 		5CD3647820455356003216C4 /* ZipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipViewController.swift; sourceTree = "<group>"; };
 		5CD3647A20455923003216C4 /* ConcatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatViewController.swift; sourceTree = "<group>"; };
+		5CD3647C20455C55003216C4 /* CombinationOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationOperator.swift; sourceTree = "<group>"; };
 		625C2AA558B87CCB45BED074 /* Pods_RxSwiftExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AEB94E2DBD6B7A5031F671 /* Pods-RxSwiftExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		79CB0D4EC5D3DF5CE419A538 /* Pods-RxSwiftExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				5CD36469204506A0003216C4 /* ExampleStoryboard.swift */,
-				5CD3646320450086003216C4 /* Commands */,
+				5CD3646320450086003216C4 /* Operator */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -160,7 +162,7 @@
 		5CD364522044F365003216C4 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				5CD3645F2044F914003216C4 /* CommandTableCell.swift */,
+				5CD3645F2044F914003216C4 /* OperationTableCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -169,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				5CD364592044F592003216C4 /* ExamplesListViewModel.swift */,
-				5CD364612044F9CE003216C4 /* CommandTableCellViewModel.swift */,
+				5CD364612044F9CE003216C4 /* OperationTableCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,15 +180,16 @@
 			isa = PBXGroup;
 			children = (
 				5CD364572044F3DD003216C4 /* Example.swift */,
-				5CD3645D2044F70B003216C4 /* Command.swift */,
+				5CD3645D2044F70B003216C4 /* Operator.swift */,
+				5CD3647C20455C55003216C4 /* CombinationOperator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5CD3646320450086003216C4 /* Commands */ = {
+		5CD3646320450086003216C4 /* Operator */ = {
 			isa = PBXGroup;
 			children = (
-				5CD3646420450096003216C4 /* Command.storyboard */,
+				5CD3646420450096003216C4 /* Operator.storyboard */,
 				5CD364432044F260003216C4 /* CombineLatestViewController.swift */,
 				5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */,
 				5CD3647420454AB4003216C4 /* MergeViewController.swift */,
@@ -194,7 +197,7 @@
 				5CD3647820455356003216C4 /* ZipViewController.swift */,
 				5CD3647A20455923003216C4 /* ConcatViewController.swift */,
 			);
-			path = Commands;
+			path = Operator;
 			sourceTree = "<group>";
 		};
 		5CD36466204501C1003216C4 /* Views */ = {
@@ -283,7 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CD3646520450096003216C4 /* Command.storyboard in Resources */,
+				5CD3646520450096003216C4 /* Operator.storyboard in Resources */,
 				5CD3643A2044F110003216C4 /* LaunchScreen.storyboard in Resources */,
 				5CD364372044F110003216C4 /* Assets.xcassets in Resources */,
 			);
@@ -369,10 +372,11 @@
 				5CD3645C2044F5D5003216C4 /* ExampleListSectionData.swift in Sources */,
 				5CD364582044F3DD003216C4 /* Example.swift in Sources */,
 				5CD3647320451E37003216C4 /* WithLatestFromViewController.swift in Sources */,
-				5CD3645E2044F70B003216C4 /* Command.swift in Sources */,
+				5CD3645E2044F70B003216C4 /* Operator.swift in Sources */,
 				5CD3647920455356003216C4 /* ZipViewController.swift in Sources */,
+				5CD3647D20455C55003216C4 /* CombinationOperator.swift in Sources */,
 				5CD3647B20455923003216C4 /* ConcatViewController.swift in Sources */,
-				5CD364622044F9CE003216C4 /* CommandTableCellViewModel.swift in Sources */,
+				5CD364622044F9CE003216C4 /* OperationTableCellViewModel.swift in Sources */,
 				5CD3646A204506A0003216C4 /* ExampleStoryboard.swift in Sources */,
 				5CD364302044F110003216C4 /* AppDelegate.swift in Sources */,
 				5CD364452044F260003216C4 /* CombineLatestViewController.swift in Sources */,
@@ -380,7 +384,7 @@
 				5CD3647520454AB4003216C4 /* MergeViewController.swift in Sources */,
 				5CD3644C2044F2FF003216C4 /* ExamplesListViewController.swift in Sources */,
 				5CD3647720455001003216C4 /* SwitchLatestViewController.swift in Sources */,
-				5CD364602044F914003216C4 /* CommandTableCell.swift in Sources */,
+				5CD364602044F914003216C4 /* OperationTableCell.swift in Sources */,
 				5CD364492044F2A9003216C4 /* BaseViewController.swift in Sources */,
 				5CD3646820450219003216C4 /* BorderExtensions.swift in Sources */,
 			);

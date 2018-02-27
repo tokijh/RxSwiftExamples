@@ -17,7 +17,7 @@ class ExamplesListViewController: BaseViewController {
         let tableView = UITableView()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 50
-        tableView.register(CommandTableCell.self, forCellReuseIdentifier: CommandTableCell.Identifier)
+        tableView.register(OperationTableCell.self, forCellReuseIdentifier: OperationTableCell.Identifier)
         return tableView
     }()
     
@@ -48,8 +48,8 @@ class ExamplesListViewController: BaseViewController {
         self.viewModel.sections.bind(to: tableView.rx.items(dataSource: self.dataSource)).disposed(by: disposeBag)
         self.tableView.rx.modelSelected(ExampleListSectionData.Value.self).subscribe(onNext: { [weak self] in
             switch $0 {
-            case .command(let command):
-                let vc = UIStoryboard(name: ExampleStoryboard.command.rawValue, bundle: nil).instantiateViewController(withIdentifier: command.storyboardID)
+            case .combination(let operation):
+                let vc = UIStoryboard(name: ExampleStoryboard.`operator`.rawValue, bundle: nil).instantiateViewController(withIdentifier: operation.storyboardID)
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }).disposed(by: disposeBag)
@@ -59,16 +59,16 @@ class ExamplesListViewController: BaseViewController {
         return RxTableViewSectionedReloadDataSource(
             configureCell: { (dataSource, tableView, indexPath, row) -> UITableViewCell in
                 switch dataSource[indexPath] {
-                case .command(let command):
-                    if let cell = tableView.dequeueReusableCell(withIdentifier: CommandTableCell.Identifier, for: indexPath) as? CommandTableCell {
-                        cell.configure(viewModel: CommandTableCellViewModel(command: command))
+                case .combination(let `operator`):
+                    if let cell = tableView.dequeueReusableCell(withIdentifier: OperationTableCell.Identifier, for: indexPath) as? OperationTableCell {
+                        cell.configure(viewModel: OperatorTableCellViewModel(operator: `operator`))
                         return cell
                     }
                 }
                 return UITableViewCell()
         }, titleForHeaderInSection: { (dataSouece, section) -> String? in
             switch section {
-            case 0: return "Commands"
+            case 0: return "Combination Operations"
             default: return nil
             }
         }, titleForFooterInSection: { (dataSource, section) -> String? in

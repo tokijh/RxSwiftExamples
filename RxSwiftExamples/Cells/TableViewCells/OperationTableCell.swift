@@ -1,5 +1,5 @@
 //
-//  CommandTableCell.swift
+//  OperationTableCell.swift
 //  RxSwiftExamples
 //
 //  Created by tokijh on 2018. 2. 27..
@@ -10,11 +10,11 @@ import UIKit
 import RxSwift
 import SnapKit
 
-class CommandTableCell: UITableViewCell {
+class OperationTableCell: UITableViewCell {
     
-    class var Identifier: String { return "CommandTableCell" }
+    class var Identifier: String { return "OperationTableCell" }
     
-    var viewModel: CommandTableCellViewModel?
+    var viewModel: OperatorTableCellViewModel?
     var disposeBag = DisposeBag()
     
     lazy var titleLabel: UILabel = {
@@ -67,7 +67,7 @@ class CommandTableCell: UITableViewCell {
         }
     }
     
-    func configure(viewModel: CommandTableCellViewModel) {
+    func configure(viewModel: OperatorTableCellViewModel) {
         self.viewModel = viewModel
         self.titleLabel.text = viewModel.title
         self.descriptionLabel.text = viewModel.description
