@@ -190,12 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				5CD3646420450096003216C4 /* Operator.storyboard */,
-				5CD364432044F260003216C4 /* CombineLatestViewController.swift */,
-				5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */,
-				5CD3647420454AB4003216C4 /* MergeViewController.swift */,
-				5CD3647620455001003216C4 /* SwitchLatestViewController.swift */,
-				5CD3647820455356003216C4 /* ZipViewController.swift */,
-				5CD3647A20455923003216C4 /* ConcatViewController.swift */,
+				5CD3647E2045622D003216C4 /* Combination */,
 			);
 			path = Operator;
 			sourceTree = "<group>";
@@ -213,6 +208,19 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5CD3647E2045622D003216C4 /* Combination */ = {
+			isa = PBXGroup;
+			children = (
+				5CD364432044F260003216C4 /* CombineLatestViewController.swift */,
+				5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */,
+				5CD3647420454AB4003216C4 /* MergeViewController.swift */,
+				5CD3647620455001003216C4 /* SwitchLatestViewController.swift */,
+				5CD3647820455356003216C4 /* ZipViewController.swift */,
+				5CD3647A20455923003216C4 /* ConcatViewController.swift */,
+			);
+			path = Combination;
 			sourceTree = "<group>";
 		};
 		D61CFB6698EC523CB6C1139B /* Pods */ = {
