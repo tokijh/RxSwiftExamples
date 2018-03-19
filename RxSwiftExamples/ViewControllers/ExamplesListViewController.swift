@@ -49,7 +49,7 @@ class ExamplesListViewController: BaseViewController {
         self.tableView.rx.modelSelected(ExampleListSectionData.Value.self).subscribe(onNext: { [weak self] in
             switch $0 {
             case .combination(let operation):
-                let vc = UIStoryboard(name: ExampleStoryboard.`operator`.rawValue, bundle: nil).instantiateViewController(withIdentifier: operation.storyboardID)
+                guard let vc = ExampleCombinationVC(rawValue: operation.viewID)?.getOperatorVC() else { return }
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }).disposed(by: disposeBag)

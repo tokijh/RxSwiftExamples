@@ -10,11 +10,11 @@ class Example {
     
     var title: String = ""
     var description: String = ""
-    var storyboardID: String = ""
+    var viewID: String = ""
     
-    init(title: String, description: String, storyboardID: String) {
+    init(title: String, description: String, viewID: String) {
         self.title = title
         self.description = description
-        self.storyboardID = storyboardID
+        self.viewID = viewID
     }
 }

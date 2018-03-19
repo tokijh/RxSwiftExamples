@@ -6,25 +6,14 @@
 //  Copyright © 2018년 tokijh. All rights reserved.
 //
 
-import UIKit
 import RxSwift
-import RxCocoa
 
-class MergeViewController: BaseViewController {
-    @IBOutlet weak var logTextView: UITextView!
-    
-    let log = Variable<String>("")
+class MergeViewController: OperatorViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
+        self.title = "Merge"
         function()
-    }
-    
-    func bind() {
-        log.asObservable().subscribe(onNext: { [weak self] in
-            self?.logTextView.text = $0
-        }).disposed(by: disposeBag)
     }
     
     func function() {
@@ -45,12 +34,5 @@ class MergeViewController: BaseViewController {
                 self?.print("Stopped timer") // did this function but logTextView will not refresh because log.asObserable().subscribe(...) is disposed. (self.log.value is refreshed.)
             }
         }).disposed(by: disposeBag)
-    }
-    
-    func print(_ items: Any...) {
-        items.forEach {
-            Swift.print($0)
-            self.log.value += String(describing: $0) + "\n"
-        }
     }
 }

@@ -19,15 +19,15 @@
 		5CD3645E2044F70B003216C4 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3645D2044F70B003216C4 /* Operator.swift */; };
 		5CD364602044F914003216C4 /* OperationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3645F2044F914003216C4 /* OperationTableCell.swift */; };
 		5CD364622044F9CE003216C4 /* OperationTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD364612044F9CE003216C4 /* OperationTableCellViewModel.swift */; };
-		5CD3646520450096003216C4 /* Operator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3646420450096003216C4 /* Operator.storyboard */; };
 		5CD3646820450219003216C4 /* BorderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3646720450219003216C4 /* BorderExtensions.swift */; };
-		5CD3646A204506A0003216C4 /* ExampleStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD36469204506A0003216C4 /* ExampleStoryboard.swift */; };
 		5CD3647320451E37003216C4 /* WithLatestFromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */; };
 		5CD3647520454AB4003216C4 /* MergeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647420454AB4003216C4 /* MergeViewController.swift */; };
 		5CD3647720455001003216C4 /* SwitchLatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647620455001003216C4 /* SwitchLatestViewController.swift */; };
 		5CD3647920455356003216C4 /* ZipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647820455356003216C4 /* ZipViewController.swift */; };
 		5CD3647B20455923003216C4 /* ConcatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647A20455923003216C4 /* ConcatViewController.swift */; };
 		5CD3647D20455C55003216C4 /* CombinationOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3647C20455C55003216C4 /* CombinationOperator.swift */; };
+		5CD364822045633F003216C4 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD364812045633F003216C4 /* OperatorViewController.swift */; };
+		5CD3648420456588003216C4 /* ExampleCombinationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3648320456588003216C4 /* ExampleCombinationVC.swift */; };
 		EBAD8FC1C37D06832FC9163D /* Pods_RxSwiftExamples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625C2AA558B87CCB45BED074 /* Pods_RxSwiftExamples.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,15 +46,15 @@
 		5CD3645D2044F70B003216C4 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		5CD3645F2044F914003216C4 /* OperationTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationTableCell.swift; sourceTree = "<group>"; };
 		5CD364612044F9CE003216C4 /* OperationTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationTableCellViewModel.swift; sourceTree = "<group>"; };
-		5CD3646420450096003216C4 /* Operator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Operator.storyboard; sourceTree = "<group>"; };
 		5CD3646720450219003216C4 /* BorderExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderExtensions.swift; sourceTree = "<group>"; };
-		5CD36469204506A0003216C4 /* ExampleStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStoryboard.swift; sourceTree = "<group>"; };
 		5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFromViewController.swift; sourceTree = "<group>"; };
 		5CD3647420454AB4003216C4 /* MergeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeViewController.swift; sourceTree = "<group>"; };
 		5CD3647620455001003216C4 /* SwitchLatestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLatestViewController.swift; sourceTree = "<group>"; };
 		5CD3647820455356003216C4 /* ZipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipViewController.swift; sourceTree = "<group>"; };
 		5CD3647A20455923003216C4 /* ConcatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatViewController.swift; sourceTree = "<group>"; };
 		5CD3647C20455C55003216C4 /* CombinationOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationOperator.swift; sourceTree = "<group>"; };
+		5CD364812045633F003216C4 /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
+		5CD3648320456588003216C4 /* ExampleCombinationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCombinationVC.swift; sourceTree = "<group>"; };
 		625C2AA558B87CCB45BED074 /* Pods_RxSwiftExamples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftExamples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67AEB94E2DBD6B7A5031F671 /* Pods-RxSwiftExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.debug.xcconfig"; sourceTree = "<group>"; };
 		79CB0D4EC5D3DF5CE419A538 /* Pods-RxSwiftExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftExamples.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftExamples/Pods-RxSwiftExamples.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +119,6 @@
 		5CD364412044F23A003216C4 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				5CD36469204506A0003216C4 /* ExampleStoryboard.swift */,
 				5CD3646320450086003216C4 /* Operator */,
 			);
 			path = Examples;
@@ -129,17 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				5CD364482044F2A9003216C4 /* BaseViewController.swift */,
-				5CD3644A2044F2C8003216C4 /* ExamplesListViewController */,
+				5CD3644B2044F2FF003216C4 /* ExamplesListViewController.swift */,
+				5CD364812045633F003216C4 /* OperatorViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		5CD3644A2044F2C8003216C4 /* ExamplesListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5CD3644B2044F2FF003216C4 /* ExamplesListViewController.swift */,
-			);
-			path = ExamplesListViewController;
 			sourceTree = "<group>";
 		};
 		5CD3644D2044F328003216C4 /* Cells */ = {
@@ -189,7 +181,7 @@
 		5CD3646320450086003216C4 /* Operator */ = {
 			isa = PBXGroup;
 			children = (
-				5CD3646420450096003216C4 /* Operator.storyboard */,
+				5CD3648320456588003216C4 /* ExampleCombinationVC.swift */,
 				5CD3647E2045622D003216C4 /* Combination */,
 			);
 			path = Operator;
@@ -214,11 +206,11 @@
 			isa = PBXGroup;
 			children = (
 				5CD364432044F260003216C4 /* CombineLatestViewController.swift */,
-				5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */,
+				5CD3647A20455923003216C4 /* ConcatViewController.swift */,
 				5CD3647420454AB4003216C4 /* MergeViewController.swift */,
 				5CD3647620455001003216C4 /* SwitchLatestViewController.swift */,
+				5CD3647220451E37003216C4 /* WithLatestFromViewController.swift */,
 				5CD3647820455356003216C4 /* ZipViewController.swift */,
-				5CD3647A20455923003216C4 /* ConcatViewController.swift */,
 			);
 			path = Combination;
 			sourceTree = "<group>";
@@ -294,7 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CD3646520450096003216C4 /* Operator.storyboard in Resources */,
 				5CD3643A2044F110003216C4 /* LaunchScreen.storyboard in Resources */,
 				5CD364372044F110003216C4 /* Assets.xcassets in Resources */,
 			);
@@ -385,7 +376,7 @@
 				5CD3647D20455C55003216C4 /* CombinationOperator.swift in Sources */,
 				5CD3647B20455923003216C4 /* ConcatViewController.swift in Sources */,
 				5CD364622044F9CE003216C4 /* OperationTableCellViewModel.swift in Sources */,
-				5CD3646A204506A0003216C4 /* ExampleStoryboard.swift in Sources */,
+				5CD364822045633F003216C4 /* OperatorViewController.swift in Sources */,
 				5CD364302044F110003216C4 /* AppDelegate.swift in Sources */,
 				5CD364452044F260003216C4 /* CombineLatestViewController.swift in Sources */,
 				5CD3645A2044F592003216C4 /* ExamplesListViewModel.swift in Sources */,
@@ -394,6 +385,7 @@
 				5CD3647720455001003216C4 /* SwitchLatestViewController.swift in Sources */,
 				5CD364602044F914003216C4 /* OperationTableCell.swift in Sources */,
 				5CD364492044F2A9003216C4 /* BaseViewController.swift in Sources */,
+				5CD3648420456588003216C4 /* ExampleCombinationVC.swift in Sources */,
 				5CD3646820450219003216C4 /* BorderExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

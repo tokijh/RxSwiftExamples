@@ -6,25 +6,14 @@
 //  Copyright © 2018년 tokijh. All rights reserved.
 //
 
-import UIKit
 import RxSwift
-import RxCocoa
 
-class SwitchLatestViewController: BaseViewController {
-    @IBOutlet weak var logTextView: UITextView!
-    
-    let log = Variable<String>("")
+class SwitchLatestViewController: OperatorViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
+        self.title = "SwitchLatest"
         function()
-    }
-    
-    func bind() {
-        log.asObservable().subscribe(onNext: { [weak self] in
-            self?.logTextView.text = $0
-        }).disposed(by: disposeBag)
     }
     
     func function() {
@@ -45,12 +34,5 @@ class SwitchLatestViewController: BaseViewController {
         aSubject.on(.next("AA-3"))
         bSubject.on(.next("BB-3"))
         bSubject.on(.next("BB-4"))
-    }
-    
-    func print(_ items: Any...) {
-        items.forEach {
-            Swift.print($0)
-            self.log.value += String(describing: $0) + "\n"
-        }
     }
 }

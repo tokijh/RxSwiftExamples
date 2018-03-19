@@ -6,26 +6,14 @@
 //  Copyright © 2018년 tokijh. All rights reserved.
 //
 
-import UIKit
 import RxSwift
-import RxCocoa
 
-class CombineLatestViewController: BaseViewController {
-
-    @IBOutlet weak var logTextView: UITextView!
-    
-    let log = Variable<String>("")
+class CombineLatestViewController: OperatorViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
+        self.title = "CombineLatest"
         function()
-    }
-    
-    func bind() {
-        log.asObservable().subscribe(onNext: { [weak self] in
-            self?.logTextView.text = $0
-        }).disposed(by: disposeBag)
     }
     
     func function() {
@@ -35,12 +23,5 @@ class CombineLatestViewController: BaseViewController {
         Observable.combineLatest(boys, girls) { return ($0, $1) }.subscribe { [weak self] in
             self?.print($0)
         }.disposed(by: disposeBag)
-    }
-    
-    func print(_ items: Any...) {
-        items.forEach {
-            Swift.print($0)
-            self.log.value += String(describing: $0) + "\n"
-        }
     }
 }

@@ -6,26 +6,15 @@
 //  Copyright © 2018년 tokijh. All rights reserved.
 //
 
-import UIKit
 import RxSwift
-import RxCocoa
 
-class WithLatestFromViewContoller: BaseViewController {
-    @IBOutlet weak var logTextView: UITextView!
-    
-    let log = Variable<String>("")
+class WithLatestFromViewContoller: OperatorViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bind()
+        self.title = "WithLatestFrom"
         function()
         function2()
-    }
-    
-    func bind() {
-        log.asObservable().subscribe(onNext: { [weak self] in
-            self?.logTextView.text = $0
-        }).disposed(by: disposeBag)
     }
     
     func function() {
@@ -48,12 +37,5 @@ class WithLatestFromViewContoller: BaseViewController {
         }.subscribe { [weak self] in
             self?.print($0)
         }.disposed(by: disposeBag)
-    }
-    
-    func print(_ items: Any...) {
-        items.forEach {
-            Swift.print($0)
-            self.log.value += String(describing: $0) + "\n"
-        }
     }
 }

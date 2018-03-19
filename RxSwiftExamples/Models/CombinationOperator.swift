@@ -15,12 +15,12 @@ class CombinationOperator: Operator {
 extension CombinationOperator {
     open class func load(_ operators: Variable<[CombinationOperator]>) {
         operators.value.append(contentsOf: [
-            CombinationOperator(title: "CombineLatest", description: "CombineLatest Example", storyboardID: "CombineLatest"),
-            CombinationOperator(title: "WithLatestFrom", description: "WithLatestFrom Example", storyboardID: "WithLatestFrom"),
-            CombinationOperator(title: "Merge", description: "Merge Example", storyboardID: "Merge"),
-            CombinationOperator(title: "SwitchLatest", description: "SwitchLatest Example", storyboardID: "SwitchLatest"),
-            CombinationOperator(title: "Zip", description: "Zip Example", storyboardID: "Zip"),
-            CombinationOperator(title: "Concat", description: "Concat Example", storyboardID: "Concat"),
+            CombinationOperator(title: "CombineLatest", description: "CombineLatest Example", viewID: "combineLatest"),
+            CombinationOperator(title: "Concat", description: "Concat Example", viewID: "concat"),
+            CombinationOperator(title: "Merge", description: "Merge Example", viewID: "merge"),
+            CombinationOperator(title: "SwitchLatest", description: "SwitchLatest Example", viewID: "switchLatest"),
+            CombinationOperator(title: "WithLatestFrom", description: "WithLatestFrom Example", viewID: "withLatestFrom"),
+            CombinationOperator(title: "Zip", description: "Zip Example", viewID: "zip"),
         ])
     }
 }
